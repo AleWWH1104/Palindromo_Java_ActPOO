@@ -6,6 +6,7 @@ import java.util.List;
 
 // un poco de ayuda de chat gpt
 class Escritor{
+    private List<String> palindromas;
     public void crear(String csv) {
         try {
             // Crear un objeto File para el archivo de salida
