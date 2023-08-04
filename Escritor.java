@@ -47,7 +47,7 @@ class Escritor{
             System.err.println("Error al escribir el archivo: " + e.getMessage());
         }
     }
-    
+
     public void mostrar(String csv) {
         try {
             // Crear un objeto File para el archivo de entrada (CSV)
@@ -63,7 +63,7 @@ class Escritor{
                 System.out.println(linea);
             }
 
-            // Cerrar BufferedReader y FileReader para liberar recursos
+            // Cerrar BufferedReader y FileReader
             bufferLectura.close();
             lectorArchivo.close();
 
