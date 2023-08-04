@@ -18,7 +18,7 @@ class Escritor{
             // Escribir el contenido del CSV en el archivo
             bufferEscritura.write(csv);
 
-            // Cerrar BufferedWriter y FileWriter para liberar recursos
+            // Cerrar BufferedWriter y FileWriter
             bufferEscritura.close();
             escritorArchivo.close();
 
