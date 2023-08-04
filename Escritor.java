@@ -1,8 +1,10 @@
 import java.io.BufferedWriter;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
+import java.io.FileReader;
 
 // un poco de ayuda de chat gpt
 class Escritor{
@@ -19,7 +21,7 @@ class Escritor{
             // Escribir el contenido del CSV en el archivo
             bufferEscritura.write(csv);
 
-            // Cerrar BufferedWriter y FileWriter
+            // Cerrar BufferedWriter y FileWriter para liberar recursos
             bufferEscritura.close();
             escritorArchivo.close();
 
