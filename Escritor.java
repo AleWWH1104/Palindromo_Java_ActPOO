@@ -42,7 +42,6 @@ class Escritor{
             bufferEscritura.close();
             escritorArchivo.close();
 
-            System.out.println("Palabras palindrómicas han sido escritas en el archivo.");
         } catch (IOException e) {
             System.err.println("Error al escribir el archivo: " + e.getMessage());
         }
