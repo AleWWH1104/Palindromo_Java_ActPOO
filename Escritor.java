@@ -53,4 +53,27 @@ class Escritor{
             System.err.println("Error al escribir el archivo: " + e.getMessage());
         }
     }
+    public void mostrar(String csv) {
+        try {
+            // Crear un objeto File para el archivo de entrada (CSV)
+            File archivoEntrada = new File(csv);
+
+            // Crear FileReader y BufferedReader para leer el archivo
+            FileReader lectorArchivo = new FileReader(archivoEntrada);
+            BufferedReader bufferLectura = new BufferedReader(lectorArchivo);
+
+            // Leer y mostrar el contenido del CSV en la consola
+            String linea;
+            while ((linea = bufferLectura.readLine()) != null) {
+                System.out.println(linea);
+            }
+
+            // Cerrar BufferedReader y FileReader para liberar recursos
+            bufferLectura.close();
+            lectorArchivo.close();
+
+        } catch (IOException e) {
+            System.err.println("Error al leer el archivo: " + e.getMessage());
+        }
+    }
 }
