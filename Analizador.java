@@ -1,15 +1,10 @@
 import java.util.ArrayList;
 
 public class Analizador {
-    LeerArchivo lectura;
-    ArrayList<String> palabras = new ArrayList<String>();
-    ArrayList<String> palindromas = new ArrayList<String>();
     
+    ArrayList<String> palindromas = new ArrayList<String>();    
     
     public ArrayList<String> devolverPalindroma(ArrayList<String> palabras){
-
-
-        //codigo para verificar si esta
         for (int i = 0; i < palabras.size(); i++){
             String palabra = palabras.get(i);
             int sizeWord = palabra.length();
@@ -18,9 +13,7 @@ public class Analizador {
                 palindromas.add(palabra);
             }
         }
-
         return palindromas;
-        
     }
 
     public static boolean palin(String p, int f, int i) {
